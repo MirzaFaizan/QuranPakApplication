@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inner"
+    tools:context="com.dmt.faizanmaaz.learnquran.SurahReader">
+
+    <TextView
+        android:id="@+id/textViewer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="130dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:textSize="28dp"
+        android:hint="Arabic here"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>

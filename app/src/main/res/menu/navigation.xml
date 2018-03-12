@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_shop"
+        android:icon="@drawable/ic_sort_read_24dp"
+        android:title="@string/title_Reading" />
+
+    <item
+        android:id="@+id/navigation_gifts"
+        android:icon="@drawable/ic_listen_24dp"
+        android:title="@string/title_Reciting" />
+
+    <item
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/ic_learn_24dp"
+        android:title="@string/title_Learning" />
+
+</menu>
