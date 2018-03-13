@@ -1,4 +1,4 @@
-package com.dmt.faizanmaaz.learnquran;
+package com.dmt.attiya.learnquran;
 
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -10,11 +10,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.dmt.faizanmaaz.learnquran.fragment.CartFragment;
-import com.dmt.faizanmaaz.learnquran.fragment.GiftsFragment;
-import com.dmt.faizanmaaz.learnquran.fragment.SurahFragment;
-import com.dmt.faizanmaaz.learnquran.fragment.reciteSurahFragment;
-import com.dmt.faizanmaaz.learnquran.helper.BottomNavigationBehavior;
+import com.dmt.attiya.learnquran.fragment.CartFragment;
+import com.dmt.attiya.learnquran.fragment.SurahFragment;
+import com.dmt.attiya.learnquran.fragment.reciteSurahFragment;
+import com.dmt.attiya.learnquran.helper.BottomNavigationBehavior;
 
 public class MainActivity extends AppCompatActivity {
 

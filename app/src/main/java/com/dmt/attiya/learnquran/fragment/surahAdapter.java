@@ -1,4 +1,4 @@
-package com.dmt.faizanmaaz.learnquran.fragment;
+package com.dmt.attiya.learnquran.fragment;
 
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -6,13 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.dmt.faizanmaaz.learnquran.AllSurahs;
+import com.dmt.attiya.learnquran.AllSurahs;
 
-import com.dmt.faizanmaaz.learnquran.MainActivity;
-import com.dmt.faizanmaaz.learnquran.R;
-import com.dmt.faizanmaaz.learnquran.SurahReader;
+import com.dmt.attiya.learnquran.R;
+import com.dmt.attiya.learnquran.SurahReader;
 
 /**
  * Created by Adnan Ejaz on 3/11/2018.

@@ -1,4 +1,4 @@
-package com.dmt.faizanmaaz.learnquran.app;
+package com.dmt.attiya.learnquran.app;
 
 
 import android.app.Application;

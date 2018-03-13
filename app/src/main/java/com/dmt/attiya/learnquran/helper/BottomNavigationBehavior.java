@@ -1,4 +1,4 @@
-package com.dmt.faizanmaaz.learnquran.helper;
+package com.dmt.attiya.learnquran.helper;
 
 import android.content.Context;
 import android.support.design.widget.BottomNavigationView;

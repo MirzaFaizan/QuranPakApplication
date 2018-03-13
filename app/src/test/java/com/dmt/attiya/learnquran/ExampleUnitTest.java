@@ -1,4 +1,4 @@
-package com.dmt.faizanmaaz.learnquran;
+package com.dmt.attiya.learnquran;
 
 import org.junit.Test;
 

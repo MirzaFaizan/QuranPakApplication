@@ -1,4 +1,4 @@
-package com.dmt.faizanmaaz.learnquran.fragment;
+package com.dmt.attiya.learnquran.fragment;
 
 
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.dmt.faizanmaaz.learnquran.R;
+import com.dmt.attiya.learnquran.R;
 
 
 public class GiftsFragment extends Fragment {

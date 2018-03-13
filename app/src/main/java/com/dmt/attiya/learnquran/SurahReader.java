@@ -1,13 +1,9 @@
-package com.dmt.faizanmaaz.learnquran;
+package com.dmt.attiya.learnquran;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
-import android.media.MediaPlayer;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import java.io.BufferedReader;

@@ -1,4 +1,4 @@
-package com.dmt.faizanmaaz.learnquran.fragment;
+package com.dmt.attiya.learnquran.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,16 +6,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.dmt.faizanmaaz.learnquran.R;
+import com.dmt.attiya.learnquran.R;
 
-public class ProfileFragment extends Fragment {
+public class CartFragment extends Fragment {
 
-    public ProfileFragment() {
+    public CartFragment() {
         // Required empty public constructor
     }
 
-    public static ProfileFragment newInstance(String param1, String param2) {
-        ProfileFragment fragment = new ProfileFragment();
+    public static CartFragment newInstance(String param1, String param2) {
+        CartFragment fragment = new CartFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -30,6 +30,6 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        return inflater.inflate(R.layout.fragment_cart, container, false);
     }
 }

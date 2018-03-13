@@ -1,4 +1,4 @@
-package com.dmt.faizanmaaz.learnquran;
+package com.dmt.attiya.learnquran;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

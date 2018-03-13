@@ -1,4 +1,4 @@
-package com.dmt.faizanmaaz.learnquran;
+package com.dmt.attiya.learnquran;
 
 /**
  * Created by Adnan Ejaz on 3/11/2018.

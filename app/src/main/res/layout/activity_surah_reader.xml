@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/inner"
-    tools:context="com.dmt.faizanmaaz.learnquran.SurahReader">
+    tools:context="com.dmt.attiya.learnquran.SurahReader">
 
     <TextView
         android:id="@+id/textViewer"
