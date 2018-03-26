@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_gifts:
-                    toolbar.setTitle("Reciting");
+                    toolbar.setTitle("Listening");
                     fragment = new reciteSurahFragment();
                     loadFragment(fragment);
                     return true;

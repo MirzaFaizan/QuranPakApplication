@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/inner"
+    android:background="@android:color/white"
     tools:context="com.dmt.attiya.learnquran.SurahReader">
 
     <TextView
@@ -20,6 +20,6 @@
         android:scrollbarAlwaysDrawVerticalTrack="true"
         android:textSize="28dp"
         android:hint="Arabic here"
-        android:textColor="#ffffff"/>
+        android:textColor="#000000"/>
 
 </LinearLayout>
