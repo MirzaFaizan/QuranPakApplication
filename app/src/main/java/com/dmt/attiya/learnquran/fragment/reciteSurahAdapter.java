@@ -21,6 +21,8 @@ import java.io.IOException;
  */
 
 public class reciteSurahAdapter extends RecyclerView.Adapter {
+    MediaPlayer player;
+    private boolean Playing = false;
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recite_surah_item,parent,false);
@@ -39,7 +41,7 @@ public class reciteSurahAdapter extends RecyclerView.Adapter {
 
     private class reciteSurahViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         private TextView surahName;
-        private boolean Playing = false;
+
         public reciteSurahViewHolder(View itemView){
             super(itemView);
             surahName = (TextView) itemView.findViewById(R.id.recite_surah_name);
@@ -51,7 +53,7 @@ public class reciteSurahAdapter extends RecyclerView.Adapter {
         }
         @Override
         public void onClick(View view) {
-            MediaPlayer player = new MediaPlayer();
+
             ImageView pause_play = view.findViewById(R.id.recite_image_play_pause);
             if(Playing==false){
 
@@ -60,8 +62,10 @@ public class reciteSurahAdapter extends RecyclerView.Adapter {
                 pause_play.setImageResource(R.drawable.ic_pause_black_24dp);
                 try {
                     AssetFileDescriptor afd = view.getContext().getAssets().openFd(index+".mp3");
+                    player = new MediaPlayer();
                     player.setDataSource(afd.getFileDescriptor(), afd.getStartOffset(), afd.getLength());
                     player.prepare();
+                    Playing=true;
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -69,7 +73,8 @@ public class reciteSurahAdapter extends RecyclerView.Adapter {
                 player.start();
             }else {
                 pause_play.setImageResource(R.drawable.ic_play_arrow_black_24dp);
-                player.stop();
+                player.pause();
+                Playing=false;
             }
         }
     }
