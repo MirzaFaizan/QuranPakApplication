@@ -2,6 +2,7 @@ package com.dmt.attiya.learnquran.fragment;
 
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +18,8 @@ import com.dmt.attiya.learnquran.SurahReader;
  */
 
 public class surahAdapter extends RecyclerView.Adapter {
-    @Override
+    @
+            Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.surah_item,parent,false);
         return new surahViewHolder(view);
@@ -33,6 +35,7 @@ public class surahAdapter extends RecyclerView.Adapter {
         return AllSurahs.data.length;
     }
 
+
     private class surahViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         private TextView surahName;
 
@@ -47,6 +50,7 @@ public class surahAdapter extends RecyclerView.Adapter {
         }
         @Override
         public void onClick(View view) {
+            Log.d("dfgdfgdf", String.valueOf( getAdapterPosition() ) );
             Intent surahSelecter = new Intent(view.getContext(), SurahReader.class);
             surahSelecter.putExtra("index",getAdapterPosition()+1);
             view.getContext().startActivity(surahSelecter);

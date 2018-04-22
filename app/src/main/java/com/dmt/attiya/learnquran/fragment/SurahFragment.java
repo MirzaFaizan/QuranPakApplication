@@ -3,6 +3,7 @@ package com.dmt.attiya.learnquran.fragment;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +23,8 @@ public class SurahFragment extends android.support.v4.app.Fragment {
         surahAdapter listAdapter = new surahAdapter();
         recyclerView.setAdapter(listAdapter);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
+
+        Log.d("legngthsdfe", String.valueOf( listAdapter.getItemCount() ) );
         recyclerView.setLayoutManager(layoutManager);
         return view;
     }
