@@ -63,8 +63,6 @@ public class reciteSurahAdapter extends RecyclerView.Adapter {
 
             if (!Playing) {
 
-
-
                 pause_play.setImageResource( R.drawable.ic_pause_black_24dp );
                 try {
                     AssetFileDescriptor afd = view.getContext().getAssets().openFd( index + ".mp3" );
@@ -81,18 +79,20 @@ public class reciteSurahAdapter extends RecyclerView.Adapter {
             } else if (Playing) {
                 Log.d( "SdfsdfsdfsfdONN", String.valueOf( player ) );
                 stopPlaying();
+
                 pause_play.setImageResource( R.drawable.ic_play_arrow_black_24dp );
                 try {
                     AssetFileDescriptor afd = view.getContext().getAssets().openFd( index + ".mp3" );
                     player = new MediaPlayer();
                     player.setDataSource( afd.getFileDescriptor(), afd.getStartOffset(), afd.getLength() );
                     player.prepare();
-                    Playing = true;
+                    Playing = false;
 
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                player.start();
+
+
 
             }
 
