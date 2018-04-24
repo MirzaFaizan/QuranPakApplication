@@ -19,7 +19,7 @@ public class reciteSurahFragment extends android.support.v4.app.Fragment{
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_recite_surah_list, container, false);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.rvReciteSurahs);
-        reciteSurahAdapter listAdapter = new reciteSurahAdapter();
+        reciteSurahAdapter listAdapter = new reciteSurahAdapter(getActivity());
         recyclerView.setAdapter(listAdapter);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
